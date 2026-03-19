@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Chandima Traveling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-route text-primary text-3xl"></i>
+                        <span class="font-bold text-2xl text-gray-800">Chandima <span class="text-primary">Traveling</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">About Us</a>
+                    <a href="vehicles.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Vehicles</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Contact</a>
+                    <a href="contact.html" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition shadow-lg hover:shadow-xl">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 mt-20 fixed w-full z-40 shadow-lg">
+            <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">About Us</a>
+            <a href="vehicles.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Vehicles</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-20 bg-primary py-16 text-white relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 mt-8">About Us</h1>
+            <p class="text-lg text-blue-100 max-w-2xl mx-auto">Discover the story behind Chandima Traveling and our commitment to excellent transport services.</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section class="py-20 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Your Trusted Travel Partner in Sri Lanka</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Chandima Traveling, we pride ourselves on providing top-tier vehicle rental services. Whether you need a comfortable ride for a family trip, a luxury car for a VIP event, or a spacious bus for a large group tour, we have you covered.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Established with the goal of making travel completely hassle-free, our diverse fleet of well-maintained vehicles and experienced, professional drivers guarantee safety, punctuality, and maximum comfort. We believe that the journey should be as enjoyable as the destination itself!
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                            <h4 class="text-4xl font-bold text-primary mb-2">10+</h4>
+                            <p class="text-gray-700 font-medium">Years Experience</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                            <h4 class="text-4xl font-bold text-primary mb-2">1000+</h4>
+                            <p class="text-gray-700 font-medium">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative fade-in mt-10 md:mt-0">
+                    <img src="images/van.png" alt="Passenger Van" class="rounded-2xl shadow-2xl relative z-10 w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-primary/20 rounded-2xl transform translate-x-4 translate-y-4 -z-10"></div>
+                </div>
+            </div>
+            
+            <div class="mt-24 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden group hover:shadow-2xl transition duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-0 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary text-2xl">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                        <p class="text-gray-600 leading-relaxed">To be Sri Lanka's leading and most preferred transport service provider, known for our unwavering commitment to safety, unparalleled customer experience, and premium fleet.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden group hover:shadow-2xl transition duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -z-0 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 text-accent text-2xl">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed">We aim to simplify travel by offering flexible, high-quality, and cost-effective vehicle rental solutions tailored to the unique needs of tourists, corporates, and local families.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="py-16 bg-gray-900 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Ready to start your journey with us?</h2>
+            <p class="text-gray-300 mb-8 text-lg">Contact our team today to find the perfect vehicle for your next adventure in Sri Lanka.</p>
+            <a href="contact.html" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full font-bold transition shadow-lg text-lg inline-flex items-center gap-2">
+                Get in Touch <i class="fa-solid fa-paper-plane"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-300 mt-auto pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 inline-block">
+                        <i class="fa-solid fa-route text-primary text-4xl"></i>
+                        <span class="font-extrabold text-3xl text-white tracking-widest leading-none">Chandima<br><span class="text-primary text-xl tracking-widest font-medium uppercase mt-1">Traveling</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-8 max-w-md leading-relaxed text-sm">Your trusted partner for all transport needs. We provide high-quality, comfortable, and reliable vehicle rental services with drivers for tours, events, and daily travels.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-600 hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-link text-primary text-sm"></i> Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> About Us</a></li>
+                        <li><a href="vehicles.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Our Vehicles</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-address-book text-primary text-sm"></i> Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                            <span class="text-sm">123 Main Road,<br>Colombo, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <span class="text-sm">+94 77 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="text-sm">info@chandimatraveling.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Chandima Traveling. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-gray-300 font-bold">Antigravity</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

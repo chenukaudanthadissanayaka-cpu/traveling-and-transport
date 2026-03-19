@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandima Traveling | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb', // Blue 600
+                        secondary: '#1e40af', // Blue 800
+                        accent: '#f59e0b', // Amber 500
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-route text-primary text-3xl"></i>
+                        <span class="font-bold text-2xl text-gray-800">Chandima <span class="text-primary">Traveling</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">About Us</a>
+                    <a href="vehicles.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Vehicles</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Contact</a>
+                    <a href="contact.html" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition shadow-lg hover:shadow-xl">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 mt-20 fixed w-full z-40 shadow-lg">
+            <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">About Us</a>
+            <a href="vehicles.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Vehicles</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center pt-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0 pt-20">
+            <img src="images/hero.png" alt="Travel Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">
+                Your Journey Begins With <br> <span class="text-accent">Chandima Traveling</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow-md">
+                Premium car, van, and bus hire services for your comfortable and safe travels across Sri Lanka.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="vehicles.html" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-bold transition shadow-lg text-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-car"></i> Explore Vehicles
+                </a>
+                <a href="contact.html" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-full font-bold transition shadow-lg text-lg flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i> Book Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-gray-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Premium Fleet</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">Choose from our wide range of well-maintained vehicles for tours, weddings, airport drops, and corporate events.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Car -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group vehicle-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/car.png" alt="Luxury Car" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-primary shadow-sm">
+                            4 Seats
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Luxury Cars</h3>
+                            <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shadow-inner">
+                                <i class="fa-solid fa-car text-primary text-xl"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Comfortable and stylish sedans perfect for corporate travel, VIP transport, and elegant weddings. Experience smooth rides with professional drivers.</p>
+                        <a href="vehicles.html#cars" class="inline-flex items-center justify-center gap-2 w-full bg-gray-50 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-xl transition border border-gray-100">
+                            View Details <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Van -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group vehicle-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/van.png" alt="Passenger Van" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-primary shadow-sm">
+                            10-14 Seats
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Passenger Vans</h3>
+                            <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shadow-inner">
+                                <i class="fa-solid fa-van-shuttle text-primary text-xl"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Spacious and comfortable KDH High Roof vans for family trips, airport transfers, and group tours. Equipped with A/C and adjustable seats.</p>
+                        <a href="vehicles.html#vans" class="inline-flex items-center justify-center gap-2 w-full bg-gray-50 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-xl transition border border-gray-100">
+                            View Details <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bus -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group vehicle-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/bus.png" alt="Tourist Bus" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-primary shadow-sm">
+                            29-45 Seats
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Tourist Buses</h3>
+                            <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shadow-inner">
+                                <i class="fa-solid fa-bus text-primary text-xl"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Luxury coaches ranging from 29-seaters to 45-seaters. Ideal for large group excursions, corporate outings, and long-distance tours with maximum comfort.</p>
+                        <a href="vehicles.html#buses" class="inline-flex items-center justify-center gap-2 w-full bg-gray-50 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-xl transition border border-gray-100">
+                            View Details <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-primary text-white relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Chandima Traveling?</h2>
+                <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 rounded-2xl hover:bg-white/5 transition duration-300 border border-transparent hover:border-white/10">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm shadow-xl">
+                        <i class="fa-solid fa-user-tie text-4xl text-accent"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Professional Drivers</h4>
+                    <p class="text-blue-100 leading-relaxed">Experienced, punctual, and friendly drivers who know the routes securely.</p>
+                </div>
+                <div class="p-6 rounded-2xl hover:bg-white/5 transition duration-300 border border-transparent hover:border-white/10">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm shadow-xl">
+                        <i class="fa-solid fa-shield-halved text-4xl text-accent"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Safe & Secure</h4>
+                    <p class="text-blue-100 leading-relaxed">Fully insured, well-maintained vehicles ensuring your peace of mind always.</p>
+                </div>
+                <div class="p-6 rounded-2xl hover:bg-white/5 transition duration-300 border border-transparent hover:border-white/10">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm shadow-xl">
+                        <i class="fa-solid fa-tags text-4xl text-accent"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Best Rates</h4>
+                    <p class="text-blue-100 leading-relaxed">Competitive and transparent pricing with absolute no hidden or extra charges.</p>
+                </div>
+                <div class="p-6 rounded-2xl hover:bg-white/5 transition duration-300 border border-transparent hover:border-white/10">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm shadow-xl">
+                        <i class="fa-solid fa-clock text-4xl text-accent"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">24/7 Support</h4>
+                    <p class="text-blue-100 leading-relaxed">We are always available online and on-call to assist with your travel needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t-4 border-primary text-gray-300 mt-auto pt-16 pb-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 inline-block">
+                        <i class="fa-solid fa-route text-primary text-4xl"></i>
+                        <span class="font-extrabold text-3xl text-white tracking-widest leading-none">Chandima<br><span class="text-primary text-xl tracking-widest font-medium uppercase mt-1">Traveling</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-8 max-w-md leading-relaxed text-sm">Your trusted partner for all transport needs. We provide high-quality, comfortable, and reliable vehicle rental services with drivers for tours, events, and daily travels.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-600 hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-link text-primary text-sm"></i> Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary hover:pl-2 transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary hover:pl-2 transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> About Us</a></li>
+                        <li><a href="vehicles.html" class="text-gray-400 hover:text-primary hover:pl-2 transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Our Vehicles</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary hover:pl-2 transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-address-book text-primary text-sm"></i> Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4 p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition">
+                            <div class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-primary"></i>
+                            </div>
+                            <span class="text-sm mt-1">123 Main Road,<br>Colombo, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-4 p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition">
+                            <div class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone text-primary"></i>
+                            </div>
+                            <span class="text-sm">+94 77 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-4 p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition">
+                            <div class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-primary"></i>
+                            </div>
+                            <span class="text-sm">info@chandimatraveling.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Chandima Traveling. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-gray-300 font-bold">Antigravity</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

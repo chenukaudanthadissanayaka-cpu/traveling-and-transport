@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Chandima Traveling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-route text-primary text-3xl"></i>
+                        <span class="font-bold text-2xl text-gray-800">Chandima <span class="text-primary">Traveling</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">About Us</a>
+                    <a href="vehicles.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Vehicles</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-primary transition font-medium">Contact</a>
+                    <a href="contact.html" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition shadow-lg hover:shadow-xl">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 mt-20 fixed w-full z-40 shadow-lg">
+            <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">About Us</a>
+            <a href="vehicles.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Vehicles</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium">Contact</a>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <div class="pt-20 bg-primary py-16 text-white relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 mt-8">Contact Us</h1>
+            <p class="text-lg text-blue-100 max-w-2xl mx-auto">Get in touch with us to book your vehicle or inquire about our services.</p>
+        </div>
+    </div>
+    <!-- Content -->
+    <section class="py-20 flex-grow relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-accent/5 rounded-full filter blur-3xl -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Let's Talk About Your Next Trip</h2>
+                    <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+                        Our customer service team is available 24/7 to answer your queries and help you choose the best transport solution for your requirements.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                            <div class="w-14 h-14 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0 text-2xl shadow-inner">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-1">Our Office</h4>
+                                <p class="text-gray-600">123 Main Road,<br>Colombo 03,<br>Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                            <div class="w-14 h-14 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0 text-2xl shadow-inner">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-1">Call Us 24/7</h4>
+                                <p class="text-gray-600">+94 77 123 4567<br>+94 11 234 5678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                            <div class="w-14 h-14 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0 text-2xl shadow-inner">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-1">Email Us</h4>
+                                <p class="text-gray-600">info@chandimatraveling.com<br>bookings@chandimatraveling.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="John" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="john@example.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="+94 77 XXX XXXX" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Vehicle Requirement</label>
+                            <select class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-white" required>
+                                <option value="" disabled selected>Select a vehicle type</option>
+                                <option value="car">Luxury Car</option>
+                                <option value="van">Passenger Van (KDH)</option>
+                                <option value="bus">Tourist Bus</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none" placeholder="Tell us about your trip schedule, dates, and any special requirements..." required></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-primary hover:bg-secondary text-white font-bold py-4 rounded-xl transition shadow-lg hover:shadow-xl text-lg flex justify-center items-center gap-2">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-300 mt-auto pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 inline-block">
+                        <i class="fa-solid fa-route text-primary text-4xl"></i>
+                        <span class="font-extrabold text-3xl text-white tracking-widest leading-none">Chandima<br><span class="text-primary text-xl tracking-widest font-medium uppercase mt-1">Traveling</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-8 max-w-md leading-relaxed text-sm">Your trusted partner for all transport needs. We provide high-quality, comfortable, and reliable vehicle rental services with drivers for tours, events, and daily travels.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-600 hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition duration-300 shadow-lg text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-link text-primary text-sm"></i> Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> About Us</a></li>
+                        <li><a href="vehicles.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Our Vehicles</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-all duration-300 flex items-center"><i class="fa-solid fa-chevron-right text-xs w-5"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2"><i class="fa-solid fa-address-book text-primary text-sm"></i> Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                            <span class="text-sm">123 Main Road,<br>Colombo, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <span class="text-sm">+94 77 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="text-sm">info@chandimatraveling.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Chandima Traveling. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-gray-300 font-bold">Antigravity</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
